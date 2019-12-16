@@ -207,7 +207,7 @@ function getCarInfoById(inventory) {
 function sortCarInventory(inventory) {
   // console.log(inventory.sort(inventory.car_make["A-Z"]))
 
-  let filter = inventory.filter(cars => cars.sort())
+  // Work on thsi one next! 
  
 }
 

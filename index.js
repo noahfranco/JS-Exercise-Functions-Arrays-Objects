@@ -196,6 +196,8 @@ function getCarInfoById(inventory) {
   return `This is a ${inventory[0].car_make} ${inventory[0].car_model}`
 }
 
+
+
 /**
  * ### Challenge `sortCarInventory`
  * 

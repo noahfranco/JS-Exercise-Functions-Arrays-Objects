@@ -196,6 +196,8 @@ function getCarInfoById(inventory) {
   return `This is a ${inventory[0].car_make} ${inventory[0].car_model}`
 }
 
+
+
 /**
  * ### Challenge `sortCarInventory`
  * 
@@ -207,7 +209,13 @@ function getCarInfoById(inventory) {
 function sortCarInventory(inventory) {
   // console.log(inventory.sort(inventory.car_make["A-Z"]))
 
-  let filter = inventory.filter(cars => cars.sort())
+  // const filter = inventory.filter(model => {
+  //   model.sort(inventory[filter].car_model)  
+  // })
+  // return filter
+
+
+  // Come back to it later!!!
  
 }
 
@@ -229,8 +237,6 @@ let year = []
   }
   
   return year 
-
-  // return `This is our car years ${inventory[filterCar].car_year}`
 }
 
 /**
@@ -245,8 +251,21 @@ let year = []
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(inventory, num ) {
+  
+  // console.log(inventory)
+
+  let arr = []
+  
+  
+  for(let year = 0; year < inventory.length; year++) {
+    arr.push((inventory.slice(-1)[0][year].car_year))
+  } 
+
+  console.log("Should output the max number fo years", arr)
+
+  return arr; 
+  
 }
 
 /**
@@ -337,3 +356,4 @@ if (typeof exports !== 'undefined') {
   if (addFive) { module.exports.addFive = addFive }
   if (argTimesTwo) { module.exports.argTimesTwo = argTimesTwo }
 }
+

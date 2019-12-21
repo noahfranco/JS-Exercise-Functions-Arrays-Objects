@@ -219,6 +219,7 @@ function sortCarInventory(inventory) {
  
 }
 
+
 /**
  * ### Challenge `getModelYears`
  * 
